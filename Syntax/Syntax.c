@@ -3,7 +3,6 @@
 //  A Syntax File for RobotC
 //
 //  Created by Ty Lavergne on 3/28/19.
-//  Copyright © 2019 Ty Lavergne. All rights reserved.
 //
 
 
