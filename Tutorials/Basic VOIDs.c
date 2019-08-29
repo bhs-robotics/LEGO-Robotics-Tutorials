@@ -6,45 +6,35 @@ const int motorStop = 0;
 const int reverseSpeed = -50;
 const int turnSpeed = 40;
 
-void moveMotor(int degrees, int speed) {
-
-	nMotorEncoder[leftMotor] = 0;
-	nMotorEncoder[rightMotor] = 0;
-
-	setMotorSyncEncoder(leftMotor, rightMotor, 0, degrees, speed);
-
-	while (getMotorEncoder(leftMotor) != degrees) {
-		motor[leftMotor] = speed;
-		motor[rightMotor] = speed;
-	}
-
+void moveMotor(int time, int speed) {
+	motor[leftMotor] = speed;
+	motor[rightMotor] = speed;
+	
+	sleep(time * 1000);
+	
 	motor[leftMotor] = 0;
 	motor[rightMotor] = 0;
 }
 
-void moveMotorLeft(int degrees, int speed) {
-	nMotorEncoder[leftMotor] = 0;
-
-	while (getMotorEncoder(leftMotor) != degrees) {
-		motor[leftMotor] = speed;
-	}
-
-	motor[leftMotor] = motorStop;
+void moveMotorLeft(int time, int speed) {
+	motor[leftMotor] = speed;
+	
+	sleep(time * 1000);
+	
+	motor[leftMotor] = 0;
 }
 
-void moveMotorRight(int degrees, int speed) {
-	nMotorEncoder[rightMotor] = 0;
-
-	while (getMotorEncoder(rightMotor) != degrees) {
-		motor[rightMotor] = speed;
-	}
-
-	motor[rightMotor] = motorStop;
+void moveMotorRight(int time, int speed) {
+	motor[rightMotor] = speed;
+	
+	sleep(time * 1000);
+	
+	motor[rightMotor] = 0;
 }
 
 task main() {
 
-	moveMotor(360, driveSpeed);
-	moveMotorLeft(90, turnSpeed);
+	moveMotor(3, driveSpeed);
+	moveMotorLeft(9, turnSpeed);
 
 }
