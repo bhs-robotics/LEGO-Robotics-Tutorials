@@ -1,6 +1,6 @@
-CHAPTER 1
+# CHAPTER 1
 
-Getting Started
+## Getting Started
 
 We’re going to be doing all of our programming inside the ROBOTC IDE and running are programs on virtual robots inside Robot Virtual Worlds.
 
@@ -10,13 +10,14 @@ Launch the ROBOTC IDE
 Set the Compiler Target to Robot Virtual Worlds
 Choose the right Virtual World
 Run a sample program to make sure everything works
-1. Launching the ROBOTC IDE
+
+### 1. Launching the ROBOTC IDE
 
 To bring up the ROBOTC IDE find and double click on the ROBOTC for VEX Robotics shortcut. Not Graphical and not Robot Virtual Worlds:
 
 ![](http://jschoolcraft.github.io/robotc-programming-tutorial/images/ch1/ROBOTOC_Shortcut_on_Desktop.png)
 
-2. Setting the Compiler Target
+### 2. Setting the Compiler Target
 
 Set the compiler target to Virtual Worlds:
 
@@ -30,7 +31,7 @@ Then select Virtual Worlds
 
 You’ll know you have that correct when the dot is next to Virtual Worlds.
 
-3. Choose the Virtual World
+### 3. Choose the Virtual World
 Now that we’ve set the Compiler Target to Robot Virtual Worlds we can chooose the correct World for our purposes:
 
         -Click on the Window menu item
@@ -45,7 +46,7 @@ Choosing VEX Highrise! Virtual World
 
 Note: If you don’t see Select Virtual Worlds to Use or Open RVW Level Builder Utility under the Window menu item then you probably haven’t chosen Virtual Worlds as the compiler target, go back to Step 2.
 
-4. Run a sample program
+### 4. Run a sample program
 Next we’re going to run a sample program to make sure we have everything set up correctly.
 
 First, go to the File menu and select Open Sample Program
